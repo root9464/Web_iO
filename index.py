@@ -90,7 +90,7 @@ def form_get():
         'image_six': '',
         'image_seven': '',
         }
-    ]
+    ]  
     return render_template('form.html', img = img)
 @app.route('/login/', methods=['POST'])
 def login_post_form():

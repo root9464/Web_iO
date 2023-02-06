@@ -18,4 +18,4 @@ document.addEventListener("DOMContentLoaded",() =>{
        star.style.right=right+"px";
      }
      } 
-   })
+   })   
