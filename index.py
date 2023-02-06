@@ -122,5 +122,11 @@ def logout():
     logout_user()
     return redirect("http://127.0.0.1:5000/form")
 
+@app.route('/error/')
+@login_required
+def error():
+    return render_template("error404.html")
+
+
 if __name__ == "__main__":
     app.run()

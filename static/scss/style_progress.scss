@@ -4,15 +4,20 @@ h1 {
     margin: 0.67em 0;
     position: absolute;
     top: 100px;
-    right: 36%;
+    right: 38%;
 }
 .block {
   display: flex;
-  height: 60vh;
-  padding: 50px;
+  position: absolute;
+  height: 79vh;
+  width: 50%;
+  padding: 77px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 50vh;
 
 }
 
