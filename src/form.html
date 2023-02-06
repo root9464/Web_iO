@@ -1,0 +1,66 @@
+{% extends 'app.html' %}
+{% block head %}
+
+<link rel="stylesheet" href="/static/css/style_form.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+
+{% endblock %}
+{% block content%}
+<div class="main">
+    <!--создание аккаунта-->
+    <p>{{error}}</p>
+    <div class="container a-container" id="a-container">
+
+        <form class="form" id="a-form" method="post" action="/register">
+          <h2 class="form_title title"> Создайте аккаунт</h2>
+          <div class="form__icons">
+            <img class="form__icon" src="/static/img/github.svg" alt="">
+            <img class="form__icon" src="/static/img/codepen.svg">
+            <img class="form__icon" src="/static/img/telegram.svg">
+
+        </div>
+            <span class="form__span">или используйте gmail для регистрации</span>
+          <input class="form__input" type="text" placeholder="Name" name="name">
+          <input class="form__input" type="text" placeholder="Email" name="email">
+          <input class="form__input" type="password" placeholder="Password" name="password">
+          <button class="form__button button" type="submit">Регистрация</button>
+        </form>
+      </div>
+      <!--вход в аккаунт-->
+      <div class="container b-container" id="b-container">
+        <form class="form" id="b-form" method="post" action="/login">
+          <h2 class="form_title title">Войдите в аккаунт</h2>
+          <div class="form__icons">
+            <img class="form__icon" src="/static/img/github.svg" alt="">
+            <img class="form__icon" src="/static/img/codepen.svg">
+            <img class="form__icon" src="/static/img/telegram.svg">
+        </div>
+        <span class="form__span">используйте gmail для входа в аккаунт</span>
+          <input class="form__input" type="text" placeholder="Email" name="email">
+          <input class="form__input" type="password" placeholder="Password" name="password">
+          <a class="form__link">ваш пароль</a>
+          <button class="form__button button" type="submit">Войти</button>
+        </form>
+      </div>
+
+
+
+    <div class="switch" id="switch-cnt">
+    <div class="switch__circle"></div>
+    <div class="switch__circle switch__circle--t"></div>
+    <div class="switch__container" id="switch-c1">
+        <h2 class="switch__title title">С возвращением!</h2>
+        <p class="switch__description description">Если у вас уже создан аккаут, то войдите в систему :) </p>
+        <button class="switch__button button switch-btn">Войти</button>
+    </div>
+    <div class="switch__container is-hidden" id="switch-c2">
+        <h2 class="switch__title title">Здравствуйте !</h2>
+        <p class="switch__description description">Введите свои личные данные и начните работу с нами</p>
+        <button class="switch__button button switch-btn">Регистрация</button>
+    </div>
+    </div>
+</div>
+
+<script  src="/static/js/scripts.js"></script>
+{% endblock %}

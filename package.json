@@ -1,0 +1,18 @@
+{
+  "name": "io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node-sass -w ./static/scss/ -o ./static/css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "rx-jquery": "^1.1.7",
+    "rxjs": "^7.8.0"
+  }
+}

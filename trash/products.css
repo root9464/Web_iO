@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #ccd1dd;
+    background-color: #f1f1f1;
+    min-height: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+ 
+
+  .table-container {
+    position: relative;
+    top: 20rem;
+    width: 100%;
+    max-width: 800px;
+    min-width: 500px;
+    margin: 0 auto 5em;
+  }
+  .table-container .inner ~ table{
+    /*padding: 0 .8em;*/
+    background-color: #1c273d;
+    border-radius: 0.6em;
+    overflow: hidden;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .table-container table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    background-color: #1c273d;;
+    overflow: hidden;
+  }
+  .table-container table tbody, .table-container table thead {
+    padding: 0 1em;
+  }
+  .table-container table tr:not(:last-child) {
+    border-bottom: 1px solid #464c59;
+  }
+  .table-container tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .table-container thead tr {
+    border-bottom: 1px solid #464c59;
+  }
+  .table-container thead th {
+    padding: 4em 1em 1em;
+  }
+  .table-container th, .table-container td {
+    padding: 0.6em 1em;
+    word-break: break-all;
+  }
+  .table-container.one tr:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .table-container.one thead tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .table__caption {
+    position: absolute;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0.6em 1em;
+    border-radius: 0.6em;
+    background-color: #1c273d;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.4);
+  }
+  .table__header {
+    font-family: inherit;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .table__header--sub {
+    font-size: 0.9em;
+  }
+  ::selection {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .ajay {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+  }
+  .ajay a {
+    text-decoration: none;
+    color: #333;
+  }
+  .ajay a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  
+.asvg{
+  fill: #fff;
+}
+
+@keyframes svg {
+  
+}
+  /* добавить адаптивку (лень) */

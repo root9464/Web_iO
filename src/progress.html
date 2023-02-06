@@ -1,0 +1,22 @@
+{% extends 'app.html' %}
+{% block head %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/static/css/style_progress.css">
+
+{% endblock %}
+{% block content%}
+<h1>I'm a dev, and these are my skills</h1>
+<div class="block">
+  <div class="chart" data-percent="95">HTML</div>
+  <div class="chart" data-percent="95">SCSS</div>
+  <div class="chart" data-percent="70">jQuery</div>
+  <div class="chart" data-percent="90">WP</div>
+  <div class="chart" data-percent="110"> Making Tea</div>
+  <div class="chart" data-percent="10"> Making Tea</div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='/static/js/plugin_progress.js'></script><script  src="/static/js/script_progress.js"></script>
+
+{% endblock %}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>iO</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="/static/css/header.css">
+  {% block head %}
+  <!-- не статики -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  {% endblock %}
+</head>
+
+<body class="hero-anime">	
+
+	<div class="navigation-wrap bg-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+					
+						<a class="navbar-brand" href="https://front.codes/" target="_blank"><img src="/static/img/atom.png" alt=""></a>	
+						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Домашняя</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="/">Главная</a>
+										<a class="dropdown-item" href="#">Навыки</a>
+										<a class="dropdown-item" href="#">О проекте</a>
+										<a class="dropdown-item" href="#">Авторы</a>
+									</div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Портфолио</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Сервисы</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="/price">Услуги</a>
+										<a class="dropdown-item" href="#">Калькулятор</a>
+										<a class="dropdown-item" href="#">Корзина</a>
+									</div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">бета</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="/contact">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+	{% block content %}
+	<div class="section full-height">
+		<div class="absolute-center">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+				<h1>
+					<span>B</span><span>o</span><span>o</span><span>t</span><span>s</span><span>t</span><span>r</span><span>a</span><span>p</span> 
+					<span>4</span><br><span>м</span><span>e</span><span>н</span><span>ю</span>
+				</h1>
+				<p>тыкни чтобы сменить тему (по фану чисто)</p>	
+						</div>	
+					</div>		
+				</div>		
+			</div>
+			<div class="section mt-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div id="switch">
+								<div id="circle"></div>
+							</div>
+						</div>	
+					</div>		
+				</div>			
+			</div>
+		</div>
+	{% endblock %}
+<div class=" cursor_container">
+	<div class="cursor" id="cursor"></div>
+	<div class="cursor2" id="cursor2"></div>
+	<div class="cursor3" id="cursor3"></div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script  src="/static/js/plugins.js"></script><script src="/static/js/plugin_cursor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script><script src="https://github.com/Reactive-Extensions/rxjs-jquery.git"></script>
+</body>
+</html>
