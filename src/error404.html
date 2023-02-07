@@ -1,4 +1,3 @@
-{% extends 'app.html' %}
 {% block head %}
 
     <title> Страница не найдена, код ошибки - 404</title>
@@ -18,6 +17,14 @@
     <img src="/static/img/cosmonavt.png" alt="" class="src">
   </div>
 
+  <div class=" cursor_container">
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor2"></div>
+    <div class="cursor3" id="cursor3"></div>
+  </div>
+
+  
+<script src="/static/js/plugin_cursor.js"></script>
 <script  src="/static/js/script_error.js"></script>
 {% endblock %}
 

@@ -11,8 +11,8 @@ app.config.update(
     SECRET_KEY = 'iO'
 )
 io = {
-    'email': 'senpai9464@yandex.ru',
-    'password': '7q8q1579',
+    'email': 'root.devoIoper',
+    'password': 'root.qwerty7q8q1579',
     'name': 'io',
 }
 
@@ -96,9 +96,9 @@ def form_get():
 def login_post_form():
     print(request.form)
     if request.form['email'] != io['email']:
-        return render_template('form.html', error = 'not email address') #errors
+        return render_template('form.html', error = 'ошибка') #errors
     if request.form['password'] != io['password']:
-        return render_template('form.html', error = 'wrong password')
+        return render_template('form.html', error = 'ошибка')
     _user = User(request.form['email'])
     login_user(_user)
 
