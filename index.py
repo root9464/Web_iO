@@ -1,4 +1,5 @@
-from flask import Flask,render_template,request,redirect, url_for
+from flask import Flask,render_template,request,redirect, url_for,jsonify
+
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 import random
 
@@ -11,7 +12,7 @@ app.config.update(
     SECRET_KEY = 'iO'
 )
 io = {
-    'email': 'root.devoIoper',
+    'email': 'root.devoIoper@gmail.com',
     'password': 'root.qwerty7q8q1579',
     'name': 'io',
 }
@@ -96,9 +97,9 @@ def form_get():
 def login_post_form():
     print(request.form)
     if request.form['email'] != io['email']:
-        return render_template('form.html', error = 'ошибка') #errors
+        return render_template('error404.html') #errors
     if request.form['password'] != io['password']:
-        return render_template('form.html', error = 'ошибка')
+        return render_template('error404.html')
     _user = User(request.form['email'])
     login_user(_user)
 
@@ -127,6 +128,9 @@ def logout():
 def error():
     return render_template("error404.html")
 
+@app.route('/api/orders')
+def api():
+    return jsonify(io)
 
 if __name__ == "__main__":
     app.run()
