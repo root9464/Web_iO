@@ -1,6 +1,6 @@
-// vars
+// lets
 'use strict'
-var	testim = document.getElementById("testim"),
+let	testim = document.getElementById("testim"),
 		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
     testimLeftArrow = document.getElementById("left-arrow"),
@@ -19,7 +19,7 @@ window.onload = function() {
 
     // Testim Script
     function playSlide(slide) {
-        for (var k = 0; k < testimDots.length; k++) {
+        for (let k = 0; k < testimDots.length; k++) {
             testimContent[k].classList.remove("active");
             testimContent[k].classList.remove("inactive");
             testimDots[k].classList.remove("active");
@@ -55,7 +55,7 @@ window.onload = function() {
         playSlide(currentSlide += 1);
     })    
 
-    for (var l = 0; l < testimDots.length; l++) {
+    for (let l = 0; l < testimDots.length; l++) {
         testimDots[l].addEventListener("click", function() {
             playSlide(currentSlide = testimDots.indexOf(this));
         })

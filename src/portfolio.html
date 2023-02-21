@@ -1,0 +1,148 @@
+{% block head %}
+  <meta charset="UTF-8">
+  <title>Portfolio by Tigra 3.0</title>
+  <!-- Крч это калька открвайте это в вске тут оно обрезалось а в вске все окей! -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><!--шрифт-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet"> <!--шрифт-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> <!--стили -->
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'> <!--начальная загрузка-->
+  <link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'> <!--мерцание-->
+  <link rel="stylesheet" href="/static/css/style_potfolio.css">
+{% endblock %}   
+{% block content%}
+
+<header class="header">
+    <div class="header__row" role="row">
+        <div class="header__column">
+            <div class="header__logo">
+                <a href="#">i <span>O<sup>℠</sup></span></a> <!--определяет встроенный текст, который должен отображаться как надстрочный-->
+            </div>
+        </div>
+        
+        <div class="header__column">
+            <div class="header__phone">
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                    8 (950) 183-11-00
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="slider">
+    <section class="slider__component js-slider">
+        <div class="slider__loader js-slider-loader" role="loader"></div>
+        <div class="slider__controls is-prev" role="controls">
+            <button type="button" class="js-slider-button-prev">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </button>
+        </div>
+        <div class="slider__controls is-next" role="controls">
+            <button type="button" class="js-slider-button-next">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+        </div>
+        
+        <article class="slider__item" role="item" data-num="1">
+            <div class="slider__item__image is-background">
+                <img src="/static/img/image 7.svg" alt="website">
+            </div>
+
+
+            <div class="slider__item__text">
+                <span>Проект №1</span>
+                <h1>iO</h1>    
+                <p class="jjdjjd">
+                    Данный проект заменяет собой мое крупнейшее порфолио которое я демонстрировал на выпусном курса JavaScript и только iO занял у меня уже около полугода)
+                    Данный проект пока что является самым крупным, поддержанным сайтом созданным мною.
+                    _______________________________________________________ <!-- а еще я мог создать дивки и сделать из них линию прикольдесную но мне впадлу потмоу что у меня уже 23:44)) 04-->
+                </p>
+                <p>Ну предисторию я рассказал а дальше удачного просмотра!</p>
+            </div>
+        </article>
+
+        <article class="slider__item" role="item" data-num="2">
+            <div class="slider__item__image is-background">
+                <img src="/static/img/Cyberpunk-Edgerunners-Lucy-2048x1152.png" alt="website">
+            </div>
+    
+            <div class="slider__item__text">
+                <span>Проект №2</span>
+                <h1>aE</h1>
+                <p>
+                    ReactJs портфолию с мощным frontend`ом в котором я применил все, что знаю касательно ReactJS, данный проект не опубликовывается на этом сайте тк невозможно сшить во едино два
+                    проекта 1: на фреймворке а 2: на обычном html,scss,js. Поэтому ссылка на данный проект будет опубликовываться лишь в кнопке и iO и aE это два крупных разных проекта...
+                </p>
+                <a href="/404" role="button"> <!--сообщает программе чтения с экрана, что элемент является кнопкой, но не обеспечивает функциональности кнопки-->
+                    Перейти
+                 </a>
+            </div>
+        </article>
+        <article class="slider__item" role="item" data-num="3">
+            <div class="slider__item__image is-background">
+                <img src="/static/img/cyberpunk2077new_wallpapers.jpeg" alt="website">
+            </div>
+            <div class="slider__item__text">
+                <span>Проект №4</span>
+                <h1>Portfolio by Tigra 2.0</h1>
+                <p>история</p>
+                <p>
+                    ______________________________________________________________
+                    Название данного проекта конечно соглашусь не очень), но не смотря на это это тоже 1 из моих крупных проектов, и именно он сейчас вшит в iO, с небольшими правками когда, адаптивом 
+                    в scss и небольшими переделками. Если вы желаете посмотреть на мои навыки, ниже кнопка)
+                </p>
+                
+                <a href="/progress" role="button">
+                   Посмотреть
+                </a>
+            </div>
+        </article>
+        
+        <article class="slider__item" role="item" data-num="4">
+            <div class="slider__item__image is-background">
+                <img src="/static/img/cyberpunk_2077_4239872542345.jpg" alt="website">
+            </div>
+            <div class="slider__item__text">
+                <span>История </span>
+                <h1>создание и разработка проектов</h1>
+                <p>Дак вот, а теперь к истории в чем же собственно дело и почему у меня так горит.</p>
+                <p style="width:54%"> 
+                    iO - Многостраничное. поддержанное потрфолию + сайт предоставляющий услуги и пиарящий меня, как разработчика. Название я придумал случайно, изначально я хотел назвать его в честь
+                    искуственного интеллекта, то есть aI и основной дизайн я хотел сделать с помощью ии и нейросетей, но тк эта идея отпала, потому что я вдохновился игрой cyberpynk 2077 и я решил создать
+                    сайт напоминающий современный дизайн, с топовыми анимациями и кодом. После я стал переберать названия и придумал iO, именно так и получилось это название, а если придавать этому смысл
+                    я бы расшифровал это как ии нулевого уровня, тот что переходит грани и выходит на новый уровень во всем что связанно с fullstack разработкой. 
+                    aE - Это одностраничный леддинг пиарящий меня, его суть лишь показать мой творческий подход к тиматике подобной iO но более яркой.
+                    Проект aE пока в пассивной разработке но в данном портфолио выше вы сможете увидеть его уже готовым.Выбор названия
+                    подобна принципу, что и с iO. И главный смысл аЕ показать мои способность написания сайтов на ReactJS 
+                </p>
+            </div>
+        </article>
+        
+        <article class="slider__item" role="item" data-num="5">
+            <div class="slider__item__image is-background">
+                <img src="/static/img/1___media_library_original_1440_810.jpeg" alt="website">
+            </div>
+            <div class="slider__item__text">
+                <span>Заключение</span>
+                <h1>о проектах)</h1>
+                <p>
+                    Оба проект по своему сильные и показывают мои навыки с разных сторон и ситуаций, на их оба было затраченно огромное колличество сил, и когда вы читаете эту строчку оба проекта находятся 
+                    еще в разработке)
+                </p>
+                <p>|| В дальнейшем я собираюсь продвигать себя теперь уже как Fullstack разработчика знающий, как Backend так и Frontend. В будующих планах изучать Redux, NodeJS, RxJS (углубленно) и Golang </p>
+                
+                <a href="/app" role="button"> 
+                  Домой
+                </a>
+            </div>
+        </article>
+    </section>
+</main>
+<!-- ЗАЛУПКА -->
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> <!--Jquery-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script> <!--Jquery-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js'></script> <!--тимер перелистывания-->
+<script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script> <!--плагин для сенсорного экрана-->
+<script src='https://kit.fontawesome.com/4643810438.js'></script><!-- React — библиотека для иконок--><script  src="/static/js/script_portfolio.js"></script>
+{% endblock %}   

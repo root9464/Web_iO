@@ -108,6 +108,11 @@ def index():
     ]
     return render_template('app.html', statick=statick)
 
+@app.route('/portfolio/')
+@login_required
+def portfolio():
+     return render_template('portfolio.html')
+
 @app.route('/progress/')
 @login_required
 def progress():
@@ -136,10 +141,10 @@ def price_list():
     
     return render_template('price.html', props = price)
 
-@app.route('/products/')
+@app.route('/about/')
 @login_required
 def products():
-    return render_template('products.html')
+    return render_template('about.html')
 
 @app.route('/contact/')
 @login_required

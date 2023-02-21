@@ -17,13 +17,13 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
 
 (function($) {
     $.easyPieChart = function(el, options) {
-      var addScaleLine, animateLine, drawLine, easeInOutQuad, rAF, renderBackground, renderScale, renderTrack,
+      let addScaleLine, animateLine, drawLine, easeInOutQuad, rAF, renderBackground, renderScale, renderTrack,
         _this = this;
       this.el = el;
       this.$el = $(el);
       this.$el.data("easyPieChart", this);
       this.init = function() {
-        var percent, scaleBy;
+        let percent, scaleBy;
         _this.options = $.extend({}, $.easyPieChart.defaultOptions, options);
         percent = parseInt(_this.$el.data('percent'), 10);
         _this.percentage = 0;
@@ -64,7 +64,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         return _this;
       };
       renderScale = function() {
-        var i, _i, _results;
+        let i, _i, _results;
         _this.ctx.fillStyle = _this.options.scaleColor;
         _this.ctx.lineWidth = 1;
         _results = [];
@@ -74,7 +74,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         return _results;
       };
       addScaleLine = function(i) {
-        var offset;
+        let offset;
         offset = i % 6 === 0 ? 0 : _this.options.size * 0.017;
         _this.ctx.save();
         _this.ctx.rotate(i * Math.PI / 12);
@@ -82,7 +82,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         _this.ctx.restore();
       };
       renderTrack = function() {
-        var offset;
+        let offset;
         offset = _this.options.size / 2 - _this.options.lineWidth / 2;
         if (_this.options.scaleColor !== false) {
           offset -= _this.options.size * 0.08;
@@ -103,7 +103,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         }
       };
       drawLine = function(percent) {
-        var offset;
+        let offset;
         renderBackground();
         _this.ctx.strokeStyle = $.isFunction(_this.options.barColor) ? _this.options.barColor(percent) : _this.options.barColor;
         _this.ctx.lineCap = _this.options.lineCap;
@@ -125,7 +125,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         };
       })();
       animateLine = function(from, to) {
-        var anim, startTime;
+        let anim, startTime;
         _this.options.onStart.call(_this);
         _this.percentage = to;
         Date.now || (Date.now = function() {
@@ -133,7 +133,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         });
         startTime = Date.now();
         anim = function() {
-          var currentValue, process;
+          let currentValue, process;
           process = Date.now() - startTime;
           if (process < _this.options.animate) {
             rAF(anim);
@@ -150,7 +150,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
         rAF(anim);
       };
       easeInOutQuad = function(t, b, c, d) {
-        var easeIn, easing;
+        let easeIn, easing;
         easeIn = function(t) {
           return Math.pow(t, 2);
         };
@@ -181,7 +181,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
     };
     $.fn.easyPieChart = function(options) {
       return $.each(this, function(i, el) {
-        var $el, instanceOptions;
+        let $el, instanceOptions;
         $el = $(el);
         if (!$el.data('easyPieChart')) {
           instanceOptions = $.extend({}, options, $el.data());
