@@ -82,7 +82,7 @@ def register():
         db.users.put(request.form)
     except:
         return redirect("http://127.0.0.1:5000/400") # error 400
-    _user = User(request.form["email"])
+    _user = User(request.form["login"])
     login_user(_user)
     return redirect('http://127.0.0.1:5000/app')
 
@@ -121,25 +121,12 @@ def progress():
 @app.route('/price/')
 @login_required
 def price_list():
-    price = [
-        {
-            'price': '1500',
-            'name_price_tag': 'Premium',
-            'description': 'lorem ipsum dolor sit am',
-        },
-        {
-            'price': '1000',
-            'name_price_tag': 'Vip',
-            'description': 'lorem ipsum dolor sit am',
-        },
-        {
-            'price': '500',
-            'name_price_tag': 'Standart',
-            'description': 'lorem ipsum dolor sit am',
-        },
-    ]
+    items = db.items.get_all()
+
+
+
     
-    return render_template('price.html', props = price)
+    return render_template('price.html', props = items)
 
 @app.route('/about/')
 @login_required
