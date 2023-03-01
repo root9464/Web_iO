@@ -18,7 +18,7 @@ h1 {
   flex-wrap: wrap;
   left: 50vh; }
 
-.chart { 
+.chart {
   position: relative;
   display: inline-block;
   margin: 20px 10px;

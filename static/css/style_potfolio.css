@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /* ВСЮ ИНФОРМАЦИЮ Я БРАЛ ВОТ ОТ СЮДА: 1)https://developer.mozilla.org/ru/ 2)https://tailwindcss.ru/*/
-* {
-  /* https://habr.com/ru/company/ruvds/blog/523370/  читать!*/
-  --color-primary: rgb(15,12,88);
-  --color-secundary: #03D694; }
-
 html {
   -ms-text-size-adjust: 100%;
   /*  алгоритм увеличения текста */
@@ -113,26 +108,24 @@ body {
   opacity: 0;
   visibility: hidden;
   /*скрывает или показывает элемент  */ }
-
-.slider__component .flickity-page-dots {
-  width: calc(100% - 16.66666%);
-  left: 50%;
-  bottom: 8vh;
-  z-index: 35;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  text-align: left; }
-
-.slider__component .flickity-page-dots li {
-  width: 16px;
-  height: 16px;
-  opacity: 0.8;
-  border: 2px solid white;
-  background-color: transparent;
-  transition: all 0.3s ease-in-out;
-  /* позволяет определять переходное состояние между двумя состояниями элемента */ }
+  .slider__component .flickity-page-dots {
+    width: calc(100% - 16.66666%);
+    left: 50%;
+    bottom: 8vh;
+    z-index: 35;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    text-align: left; }
+    .slider__component .flickity-page-dots li {
+      width: 16px;
+      height: 16px;
+      opacity: 0.8;
+      border: 2px solid white;
+      background-color: transparent;
+      transition: all 0.3s ease-in-out;
+      /* позволяет определять переходное состояние между двумя состояниями элемента */ }
 
 @media (min-width: 0px) and (max-width: 768px) {
   .slider__component .flickity-page-dots li {
@@ -169,7 +162,7 @@ body {
   position: fixed;
   overflow: hidden;
   z-index: 30;
-  background-color: var(--color-primary);
+  background-color: #0f0c58;
   /* Вторичные цвета*/
   /* если не нравится замените на #051367 */ }
 
@@ -278,7 +271,7 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    background-color: var(--color-primary);
+    background-color: #0f0c58;
     /*может использоваться для вставки значения пользовательского свойства */
     opacity: 0;
     visibility: 0; }
