@@ -1,4 +1,4 @@
-Creative Commons Attribution-NonCommercial 4.0 International
+# Creative Commons Attribution-NonCommercial 4.0 International
 
 Creative Commons Corporation ("Creative Commons") is not a law firm and
 does not provide legal services or legal advice. Distribution of
@@ -10,7 +10,7 @@ terms and conditions, or any related information. Creative Commons
 disclaims all liability for damages resulting from their use to the
 fullest extent possible.
 
-Using Creative Commons Public Licenses
+# Using Creative Commons Public Licenses
 
 Creative Commons public licenses provide a standard set of terms and
 conditions that creators and other rights holders may use to share
@@ -47,8 +47,7 @@ exhaustive, and do not form part of our licenses.
     requests where reasonable. More considerations for the public :
     wiki.creativecommons.org/Considerations\_for\_licensees
 
-Creative Commons Attribution-NonCommercial 4.0 International Public
-License
+# Creative Commons Attribution-NonCommercial 4.0 International Public License
 
 By exercising the Licensed Rights (defined below), You accept and agree
 to be bound by the terms and conditions of this Creative Commons
@@ -59,7 +58,7 @@ acceptance of these terms and conditions, and the Licensor grants You
 such rights in consideration of benefits the Licensor receives from
 making the Licensed Material available under these terms and conditions.
 
--   Section 1 – Definitions.
+-   **Section 1 – Definitions.**
 
     -   a. Adapted Material means material subject to Copyright and
         Similar Rights that is derived from or based upon the Licensed
@@ -124,7 +123,7 @@ making the Licensed Material available under these terms and conditions.
         Rights under this Public License. Your has a corresponding
         meaning.
 
--   Section 2 – Scope.
+-   **Section 2 – Scope.**
 
     -   a. License grant.
         -   1. Subject to the terms and conditions of this Public
@@ -191,7 +190,7 @@ making the Licensed Material available under these terms and conditions.
             the Licensed Material is used other than for NonCommercial
             purposes.
 
--   Section 3 – License Conditions.
+-   **Section 3 – License Conditions.**
 
     Your exercise of the Licensed Rights is expressly made subject to
     the following conditions.
@@ -229,7 +228,7 @@ making the Licensed Material available under these terms and conditions.
             License You apply must not prevent recipients of the Adapted
             Material from complying with this Public License.
 
--   Section 4 – Sui Generis Database Rights.
+-   **Section 4 – Sui Generis Database Rights.**
 
     Where the Licensed Rights include Sui Generis Database Rights that
     apply to Your use of the Licensed Material:
@@ -251,7 +250,7 @@ making the Licensed Material available under these terms and conditions.
     replace Your obligations under this Public License where the
     Licensed Rights include other Copyright and Similar Rights.
 
--   Section 5 – Disclaimer of Warranties and Limitation of Liability.
+-  **Section 5 – Disclaimer of Warranties and Limitation of Liability.**
 
     -   a. Unless otherwise separately undertaken by the Licensor, to
         the extent possible, the Licensor offers the Licensed Material
@@ -279,7 +278,7 @@ making the Licensed Material available under these terms and conditions.
         extent possible, most closely approximates an absolute
         disclaimer and waiver of all liability.
 
--   Section 6 – Term and Termination.
+-   **Section 6 – Term and Termination.**
 
     -   a. This Public License applies for the term of the Copyright and
         Similar Rights licensed here. However, if You fail to comply
@@ -304,7 +303,7 @@ making the Licensed Material available under these terms and conditions.
     -   d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
         License.
 
--   Section 7 – Other Terms and Conditions.
+-   **Section 7 – Other Terms and Conditions.**
 
     -   a. The Licensor shall not be bound by any additional or
         different terms or conditions communicated by You unless
@@ -313,7 +312,7 @@ making the Licensed Material available under these terms and conditions.
         Licensed Material not stated herein are separate from and
         independent of the terms and conditions of this Public License.
 
--   Section 8 – Interpretation.
+-   **Section 8 – Interpretation.**
 
     -   a. For the avoidance of doubt, this Public License does not, and
         shall not be interpreted to, reduce, limit, restrict, or impose
